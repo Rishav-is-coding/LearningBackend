@@ -38,3 +38,16 @@ app.ABCXYZ('/path' , (req, res) => {
         console.log(`Example app listening on port ${process.env.PORT}`)
     }) -> server listening on local host port provided in .env file
 
+** always try to make schema of data, before proceding with coding -> make screens before coding (DATA MODELLING) => "mongoose" is used 
+
+import mongoose from 'mongoose'
+
+const userSchema = new mongoose.Schema({
+    test1 : {
+        type: .......
+    },
+    test2 ......
+} , {timestamps : true})
+
+export const user = mongoose.model('user', userSchema)
+

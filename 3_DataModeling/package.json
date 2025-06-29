@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.16.1"
+  },
+  "name": "datamodeling",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "rishav",
+  "license": "ISC",
+  "description": ""
+}
