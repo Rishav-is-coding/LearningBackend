@@ -1,0 +1,28 @@
+2 major components -
+    1. A programming language(java, JS, PHP, Golang, c++) -> using a framework (django, express, etc)
+    2. A Database (Mongo, MySQL, Postgres, Sqlite, etc) -> ORM , ODM 
+
+
+    Browser <-> API <-> Backend <-> DB (anoher continent)
+
+JavaScript Based Backend(Express and Mongoose)
+
+3 works -> data, file, Third Party API
+
+File Structures ->
+    Src
+        index -> DB connects
+        app -> config, cookies
+        constants -> enums, DB-name
+
+    Directory Structures-
+        DB
+        Models - schema(Structures)
+        Controllers - methods(functions) 
+        Routes 
+        Middlewares
+        Utils - utilities
+        More(depends)
+
+
+Computer <-Express-> Server ; Express -> handles requests and responds
