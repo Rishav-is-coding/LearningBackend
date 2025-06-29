@@ -25,4 +25,16 @@ File Structures ->
         More(depends)
 
 
-Computer <-Express-> Server ; Express -> handles requests and responds
+Computer <-- Express --> Server ; Express -> handles requests and responds
+
+app.ABCXYZ('/path' , (req, res) => {
+    app.XYZ1('test1')
+})
+    eg-
+    app.get('/', (req, res) => {
+        app.send('Hello world!')
+    }) -> this get data from server home Directory, send a request and get "Hello World!" as response
+    app.listen(process.env.PORT, () => {
+        console.log(`Example app listening on port ${process.env.PORT}`)
+    }) -> server listening on local host port provided in .env file
+
