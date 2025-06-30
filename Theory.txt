@@ -51,3 +51,50 @@ const userSchema = new mongoose.Schema({
 
 export const user = mongoose.model('user', userSchema)
 
+
+
+
+
+
+
+
+
+HTTP -> Hyper Text Transfer Protocol
+HTTP Headers -> 
+    metadata --> key-value pairs set along wiht request and response
+    used for caching, authentication, manage state , etc
+
+    Types ->
+        Request Headers -> from client
+        Respons Headers -> from server
+        Representation Headers -> encoding/compression
+        Payload Headers -> data
+
+    Most Common Headers -> 
+        Accept : application/json
+        User-Agent -> konsi application se request aayi hai
+        Authorization -> 
+        Content-type -> images, pdf , blah blah
+        cookies -> object (itne time tak user login rhega , etc etc)
+        Cache-control 
+
+    CORS headers
+    Security headers
+
+HTTP methods -> Basic set of operations that can be used to interact with server
+    GET - retrieve a resource
+    HEAD - no message body (response headers only)
+    OPTIONS - what operations are available
+    TRACE - loopback test (get some data)
+    DELETE - remove a resource
+    PUT - replace a resource
+    POST - interact with resource (mostly add)
+    PATCH - change part of resource 
+
+HTTP Status Code -> 
+    1xx - informational
+    2xx - success
+    3xx - redirection
+    4xx - client error
+    5xx - server error
+
