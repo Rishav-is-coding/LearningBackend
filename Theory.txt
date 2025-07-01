@@ -56,7 +56,7 @@ export const user = mongoose.model('user', userSchema)
 
 
 
-
+Access Token -> usually short lived -> after its is expired -> we need to again enter login id password again to login => REFRESH TOKEN -> refresh token is sent along with request -> it is then checked in backend stored refresh token , if matched new access token is generated and user is logged in without entering id pass
 
 
 HTTP -> Hyper Text Transfer Protocol
@@ -97,4 +97,22 @@ HTTP Status Code ->
     3xx - redirection
     4xx - client error
     5xx - server error
+
+
+
+SUBSCRIPTION SCHEMA --> har bar naya document banta hai {subscriber, channel} -> no of subscriber = no of document with "channel"
+eg - user = a, b, c, d, e
+    channel = cac, hcc, fcc 
+
+    suppose -> 
+        a subscribed cac => {subscriber : a ,channel : cac}
+        b subscribed cac => {subscriber : b , channel: cac}
+        c subscribed cac => {subscriber : c, channel : cac}
+        c subscribed hcc => {subscriber: c , channel : hcc}
+        c subscribed fcc => {subscriber : c, channel : fcc}
+
+    no of subscriber of cac = no of documents with channel : cac
+    no of channels c subscribed = no of documents with subscriber : c
+
+
 
